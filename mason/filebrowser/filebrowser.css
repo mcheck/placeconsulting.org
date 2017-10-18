@@ -1,0 +1,216 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background-color: #f1f1e3;	
+	background-image: url(images/bg.gif);
+	font-size: 12px;	
+	behavior: url("csshover.htc"); 
+}
+
+body, td, input, select, textarea
+{
+	font-size: 11px;
+	font-family: 'Microsoft Sans Serif' , Arial, Helvetica, Verdana;
+}
+
+h1
+{
+	width: 535px;
+	font-weight: bold;
+	font-size: 12pt;
+	color: #737357;
+	background-color: #e3e3c7;
+	margin: 0px;
+	padding: 3px 10px 3px 10px;
+}
+
+h3
+{
+	margin: 5px;
+	margin-left: 20px;
+}
+
+img
+{
+	border: 0;
+}
+
+a:link
+{
+	color: #0E70B0;
+	border: 0;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #0E70BB;
+	border: 0;
+	text-decoration: none;
+}
+
+a:visited
+{
+	color: #0E70B0;
+	border: 0;
+	text-decoration: none;
+}
+
+.MenuItem
+{
+	cursor: pointer;
+	background-color: #EFF0EE;
+}
+
+.MenuItem:hover
+{
+	background-color: #FFFFFF;
+}
+
+.StatusBar
+{
+	border-top: #d5d59d 1px solid;
+	padding: 10px;
+	color: #737357;
+	background-color: #e3e3c7;	
+}
+
+.PopupTitleBorder
+{
+	border-bottom: #d5d59d 1px solid;
+}
+
+.PopupTabArea
+{
+	color: #737357;
+	background-color: #e3e3c7;
+}
+
+.PopupTabEmptyArea
+{
+	padding-left: 10px ;
+	border-bottom: #d5d59d 1px solid;
+}
+
+.PopupTab, .PopupTabSelected
+{
+	border-right: #d5d59d 1px solid;
+	border-top: #d5d59d 1px solid;
+	border-left: #d5d59d 1px solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	color: #737357;
+}
+
+.PopupTab
+{
+	margin-top: 1px;
+	border-bottom: #d5d59d 1px solid;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.PopupTabSelected
+{
+	font-weight:bold;
+	cursor: default;
+	padding-top: 4px;
+	border-bottom: #f1f1e3 1px solid;
+	background-color: #f1f1e3;
+}
+
+.PopupSelectionBox
+{
+	border: #ff9933 1px solid;
+	background-color: #fffacd;
+	cursor: pointer;
+	cursor: hand;
+}
+
+#PM_uploader, #PM_folder, #PM_sorting
+{
+	width: 525px;
+	background-color: #EDEDDC;
+	z-index: 3;
+	top: 90px;
+	padding: 15px;
+	border-bottom: #d5d59d 1px solid;
+}
+
+#PM_hidesource
+{
+	display: none;
+}
+
+#PM_showsource
+{
+	display: inline;
+}
+
+#PM_source
+{
+	display: none;
+}
+
+#PM_thumb
+{
+	padding-top: 21px;
+	height: 107px;
+	width: 128px;
+	background: url(images/unknown.png) no-repeat left top;	
+}
+
+.PM_corner
+{
+	background: url(images/corner.png) no-repeat bottom right;
+	height: 105px;
+	width: 110px;
+}
+
+#PM_sorting
+{
+
+}
+
+#PM_filesystem, #PM_filesystem2
+{
+	width: 554px;
+	position: absolute;
+	top: auto;
+    z-index: 1;
+}
+
+#PM_filesystem2
+{
+	left: 580px;
+}
+
+#PM_folders, #PM_files
+{
+	width: 540px;
+	display: block;
+}
+
+#PM_browser_prompt
+{
+	width: 120px;
+	padding: 5px;
+	border: 1px solid #666;
+	background: #FFFFFF;
+}
+
+#PM_browser_prompt input
+{
+	font-size: 14px;
+}
+
+#PM_foldericon
+{
+	text-align: center;
+	vertical-align: middle;
+	width: 180px;
+	height: 180px;
+}

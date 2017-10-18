@@ -1,0 +1,19 @@
+
+RewriteEngine on
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName placeconsulting.net
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+RewriteCond %{HTTP_HOST} ^placeconsulting.net$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^/?$ "http\:\/\/www\.placeconsulting\.net\/" [R=301,L]

@@ -1,0 +1,30 @@
+/*
+ * This is for the fck-editor inside the Content Editors for OK and Cancel Menu Buttons
+ * It is also used in the main index.php file too
+ */
+
+#menus, #menus div{ padding-right: 5px; padding-bottom: 2px; }
+#menus a, #menus a:visited, #menus a:active, #menus a:link 
+{ 
+	background-color: #DDD; 
+	color: #333; 
+	border: 1px solid #999966;
+	padding-left: 5px; 
+	padding-right: 5px; 
+	text-decoration: none; 
+	margin-top: 4px; 
+	font-size: 14px; 
+	font-weight: bold; 
+}
+#menus a:hover 
+{ 
+	background-color:#dff1ff; 
+	color: #111;
+	border: 1px solid #316AC5; 
+	text-decoration: none; 
+}
+
+#xEditingArea 
+{
+	background-color: #FFF;
+}

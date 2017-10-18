@@ -1,0 +1,586 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background: #FFFFFF;
+	behavior: url("csshover.htc");
+}
+
+a:link, a:visited
+{
+	color: #333;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a:hover
+{
+	color: #B91400;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a:active
+{
+	color: #F00;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+img:link, img:visited
+{
+	text-decoration: none !important;
+}
+
+a:link img, a:visited img
+{
+	text-decoration: none !important;
+}
+
+/* Page Mason Header */
+#PM_header
+{
+	height: 60px;
+	padding-bottom: 10px;
+	border: 0;
+	background: url(../images/header_bg.gif) repeat-x bottom left;
+}
+#PM_pm_logo a, #PM_lp_logo a
+{
+/*	width: 150px;
+	height: 60px;*/
+	display: block;
+	border: 0px;
+}
+#PM_header span
+{
+	display: none;
+}
+#PM_pm_logo
+{
+	height: 60px;
+	width: 150px;
+	border: 0px;
+	background: url(../images/pageMason_logo.gif) no-repeat center center;
+	float: left;
+}
+#PM_lp_logo
+{
+	height: 60px;
+	width: 200px;
+	border: 0px;
+	background: url(../images/lp_logo.jpg) no-repeat center center;
+	float: right;
+	margin-right: 10px;
+}
+
+
+/* Page Mason Navigation */
+#PM_navigation span
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 10px;
+	float: right;
+	font-family: "Times New Roman", Times, serif;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-decoration: none;
+}
+#PM_navigation ul
+{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	margin-right: 10px;
+}
+#PM_navigation li
+{
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+}
+#PM_navigation a
+{
+	float: left;
+	background: url(../images/PM_button_wide.png) no-repeat center right;
+	margin: 0px;
+	padding-right: 12px;
+	text-decoration: none;
+	color: #FFF;
+	font: 18px arial bold;
+	cursor: pointer;
+}
+#PM_navigation a span
+{
+	float: left;
+	display: block;
+	height: 26px;
+	background: url(../images/PM_button_left.png) no-repeat center left;
+	padding: 13px 0px 6px 12px;
+	_padding-top: 10px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#PM_navigation .PM_clean
+{
+	background: none;
+	padding: 11px 2px 0px 2px;
+	float: left;
+}
+
+#PM_pages
+{
+	border: 1px solid #000;
+	color: black;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #FFF;
+}
+
+#PM_pages option
+{
+	border: none;
+	color: black;
+	background: #FFF;
+}
+
+#PM_pages optgroup
+{
+	border: none;
+	color: black;
+	font-weight: bold;
+	background: #DDD;
+}
+
+/* PageMason Body */
+#PM_body
+{
+	margin: 50px 10px 5px 35px;
+}
+
+/* PageMason Boxes */
+.PM_box
+{
+	width: 557px;
+	margin-bottom: 25px;
+	overflow: auto;
+}
+
+.PM_box hr
+{
+	clear: both;
+	display: block;
+	width: 0px;
+	height: 0px;
+	background: #FFF;
+	color: #FFF;
+}
+
+.PM_boxtitle
+{
+	margin: 0px;
+	color: #666;
+	background: url(../images/PM_box_header.png) no-repeat center center;
+	height: 27px;
+	padding-left: 50px;
+	padding-top: 5px;
+	font-size: 16px;
+	font-family: arial;
+	font-weight: bold;
+}
+.PM_box ul
+{
+	background: url(../images/PM_box_bg.png) repeat-y center center;
+	padding: 10px 25px 10px 25px;
+	margin: 0px;
+	list-style-type: none;
+	overflow: visible;
+	margin-top: -2px;
+/*	height: 100%; */
+}
+.PM_boxbottom
+{
+	background: url(../images/PM_box_bottom.png) no-repeat top center;
+}
+.PM_box li
+{
+	float: left;
+}
+.PM_boxcontent
+{
+	padding: 10px 25px 10px 25px; 
+	margin: -2px 0px 0px 0px;
+/*	height: 100%; */
+	background: url(../images/PM_box_bg.png) repeat-y center center;
+}
+
+/* PageMason Form Fields */
+
+
+/* PageMason Buttons */
+.PM_button
+{
+	width: 65px;
+	display: block;
+	margin: 5px;
+	padding-top: 55px;
+	text-align: center;
+	color: #666;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: arial;
+}
+
+#PM_layouts
+{
+	display: none;
+}
+#PM_templates
+{
+	display: none;
+}
+
+input.PM_submit
+{
+	height: 26px;
+	display: block;
+	background: url(../images/PM_button_left.png) no-repeat center left;
+	border: 0px;
+	color: #FFF;
+	font: 18px arial bold;
+	cursor: pointer;
+}
+
+span.PM_submit
+{
+	background: url(../images/PM_button_wide.png) no-repeat center right;
+	margin: 0px;
+	float: left;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#PM_template_holder
+{
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#PM_template_holder table
+{
+	display: block;
+	width: 500px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#PM_addsite		{background: url(../images/PM_addsite.png) 		no-repeat top center;}
+#PM_deletesite	{background: url(../images/PM_deletesite.png) 	no-repeat top center;}
+#PM_editsite	{background: url(../images/PM_editsite.png) 	no-repeat top center;}
+#PM_importsite	{background: url(../images/PM_importsite.png) 	no-repeat top center;}
+#PM_publishsite	{background: url(../images/PM_publishsite.png)	no-repeat top center;}
+#PM_filemanager	{background: url(../images/PM_filemanager.png)	no-repeat top center;}
+#PM_changelogin	{background: url(../images/PM_changelogin.png)	no-repeat top center;}
+#PM_help		{background: url(../images/PM_help.png) 		no-repeat top center;}
+#PM_tutorial	{background: url(../images/PM_tutorial_button.png) 		no-repeat top center;}
+#PM_feedback	{background: url(../images/PM_feedback.png)		no-repeat top center;}
+#PM_twoleft		{background: url(../images/PM_twoleft.png)		no-repeat top center; padding-top: 100px; width: 120px; display: table-cell;}
+#PM_oneleft		{background: url(../images/PM_oneleft.png)		no-repeat top center; padding-top: 100px; width: 120px; display: table-cell;}
+#PM_onetop		{background: url(../images/PM_onetop.png)		no-repeat top center; padding-top: 100px; width: 120px; display: table-cell;}
+#PM_oneright	{background: url(../images/PM_oneright.png)		no-repeat top center; padding-top: 100px; width: 120px; display: table-cell;}
+#PM_tworight	{background: url(../images/PM_tworight.png)		no-repeat top center; padding-top: 100px; width: 120px; display: table-cell;}
+
+#PM_help_topics p
+{
+	display: none;
+	margin: 0;
+	padding: 0;
+	padding-left: 12px;
+}
+
+.PM_help_topic
+{
+	background: url(/mason/admin/images/app/bullet_toggle_plus.png) center left no-repeat;
+}
+
+.PM_help_text
+{
+	margin: 0;
+	padding: 0;
+}
+
+.PM_help_text h5
+{
+	margin: 0;
+	padding: 0;
+}
+
+#PM_search_help
+{
+	width: 300px;
+}
+
+.PM_search_text
+{
+	display: none;
+}
+
+#PM_edit_sites td
+{
+	padding: 0;
+	margin: 0;
+	padding: 3px;
+	border-right: 1px solid #BBB;
+	border-bottom: 1px solid #BBB;
+}
+#PM_edit_sites th
+{
+	padding: 0;
+	margin: 0;
+	padding: 3px;
+	border-right: 1px solid #BBB;
+	border-bottom: 1px solid #BBB;
+	background: #F4E6E6;
+}
+
+#PM_edit_sites tr:hover
+{
+	background: #FFF2A5;
+}
+
+#PM_edit_sites table
+{
+	border-left: 1px solid #BBB;
+	border-top: 1px solid #BBB;
+}
+
+#PM_edit_sites h5
+{
+	background: url(/mason/admin/images/app/bullet_toggle_plus.png) center left no-repeat;
+}
+
+#PM_activity_indicator
+{
+	display: none;
+	width: 36px;
+	height: 32px;
+	position: absolute;
+	top: 16px;
+	left: 18px;
+	zindex: 5;
+	background: url(/mason/admin/images/indicator.gif) no-repeat center center #FFF;
+}
+
+#loadfilter  
+{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:10000;
+	background: #000000;
+	-moz-opacity: 0.4;
+	opacity:.40;
+	filter: alpha(opacity=40);	
+	/*OLD WAY: background: url('/mason/admin/images/invisgrid.gif') repeat;*/
+}
+
+
+#loadfilter[id]{position:fixed;}
+
+#loading-splash
+{
+	background-color: #FFFFFF;
+	border: solid 1px #000000;
+	display:none;
+	color:#0099FF;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	position:fixed;
+	z-index:10001;
+	width: 148px;
+	height: 55px;
+}
+
+#loading-splash-text
+{
+	display: none;
+	float: left;
+	color:#0099FF;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	position:fixed;
+	z-index:10001;
+}
+
+#PM_help_table
+{
+	float: right;
+	zindex: 999999;
+}
+
+#PM_help_content
+{
+	background: url(/mason/admin/images/PM_help_left.png) top left no-repeat;
+	height: 58px;
+	width: 1px;
+	padding-left: 5px;
+	zindex: 999999;
+}
+#PM_help_text
+{
+	padding-top: 4px;
+	padding-right: 4px;
+	zindex: 999999;
+	font-face: "Times New Roman", Times, serif;
+	font-size: 12px;
+	color:#333333;	
+}
+
+#PM_help_right
+{
+	cursor: pointer;
+	background: url(/mason/admin/images/PM_help_right.png) top right no-repeat;
+	width: 54px;
+	height: 58px;
+	display: block;
+	zindex: 999999;
+}
+#PM_help_area
+{
+	float: right;
+	position: fixed;
+	bottom: 0px;
+	height:58px;
+}
+#PM_help_area table tr td
+{
+	margin: 0px;
+	padding: 0px;
+	zindex: 999999;
+}
+
+<!--[if IE]>
+* html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+* html body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+* html #PM_help_area {
+    position: absolute;
+}
+
+<[endif]-->
+
+.PM_prompt
+{
+	border: 1px solid #B2ACAB;
+	background-color: #F3F3F3;
+	border: 1px solid #CCCCCC;
+	height: 110px;
+}
+
+.PM_prompt_header
+{
+	border: 1px solid #FFFFFF;
+	background: #B91400;
+	color: #FFFFFF;
+	padding: 3px;
+	font-weight: bold;
+}
+
+.PM_prompt_content
+{
+	padding: 10px;
+}
+
+.PM_prompt_content hr
+{
+	width: 100%;
+	height: 1px;
+	color: #B91400;
+}
+
+#PM_Toolbar
+{
+	background-color: #EAEAD5;
+	
+	padding: 1px;
+	border-top: #efefde 1px outset;
+	border-bottom: #efefde 1px outset;
+}
+
+#PM_Toolbar, #PM_Toolbar A
+{
+	font-size: 11px;
+	cursor: default;
+	font-family: 'Microsoft Sans Serif' , Tahoma, Arial, Verdana, Sans-Serif;
+	text-decoration: none;
+	font-weight:normal;
+}
+
+.PM_Button_Off
+{
+	padding: 6px;
+	margin: 1px;
+/*  height: 21px;*/
+	
+	border: #efefde 1px solid;
+	
+	opacity: 0.70; /* Safari, Opera and Mozilla */
+/*	filter: alpha(opacity=70); *//* IE */
+	/* -moz-opacity: 0.70; Mozilla (Old) */
+	background-color: none; 
+}
+
+.PM_Button_Off a
+{
+	font-family: Tahoma, Arial, Geneva, sans-serif;
+	font-weight:100;
+	text-decoration:underline;
+	border: none;
+	background:none;
+}
+.PM_Button_Off img
+{
+	border: none;
+	height: 16px;
+	width: 16px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.PM_Button_Off:hover
+{
+	border: 1px #0066FF solid;
+	background-color:#D7D8E3;
+}
+
+.PM_smallpreview
+{
+	background-repeat: no-repeat;
+	display: block;
+	width: 80px;
+	height: 80px;
+	border: solid 1px #CECECE;
+	background: top center no-repeat #EEEEEE;
+	cursor: pointer;
+}
